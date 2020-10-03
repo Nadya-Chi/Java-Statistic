@@ -60,26 +60,22 @@ public class ServiceSum {
     }
 
     public long findMonthLessMiddleSum(long[] purchases) {
-        long month = 1;
-        int index = 0;
+        int month = 0;
         long middlePurchases = middleSum(purchases);
         for (long purchase : purchases) {
-            index++;
             if (purchase < middlePurchases) {
-                month = index;
+                month++;
             }
         }
         return month;
     }
 
     public long findMonthMoreMiddleSum(long[] purchases) {
-        long month = 1;
-        int index = 0;
+        long month = 0;
         long middlePurchases = middleSum(purchases);
         for (long purchase : purchases) {
-            index++;
             if (purchase > middlePurchases) {
-                month = index;
+                month++;
             }
         }
         return month;

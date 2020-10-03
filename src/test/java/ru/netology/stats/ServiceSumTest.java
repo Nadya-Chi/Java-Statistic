@@ -64,7 +64,7 @@ class ServiceSumTest {
     void findMonthLessMiddleSum() {
         ServiceSum service = new ServiceSum();
         long[] purchases = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
-        long expected = 11;
+        long expected = 5;
         long actual = service.findMonthLessMiddleSum(purchases);
         assertEquals(expected, actual);
     }
@@ -73,7 +73,7 @@ class ServiceSumTest {
     void findMonthMoreMiddleSum() {
         ServiceSum service = new ServiceSum();
         long[] purchases = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
-        long expected = 12;
+        long expected = 5;
         long actual = service.findMonthMoreMiddleSum(purchases);
         assertEquals(expected, actual);
     }
